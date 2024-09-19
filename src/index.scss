@@ -93,18 +93,29 @@ body {
   ul {
     list-style: none;
     padding: 0;
-
     li {
+      // position: relative;
       padding: 15px;
       border: 2px solid rgba(0, 0, 0, 0.1);
       border-radius: 15px;
       margin-bottom: 10px;
       cursor: pointer;
       transition: all 0.1s ease-in-out;
+      -webkit-transition-duration: 0.5s; /* Safari */
+      transition-duration: 0.5s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
 
       &:hover {
         border: 2px solid rgba(0, 0, 0, 0.3);
       }
     }
   }
+}
+.effect__true {
+  background: #90EE90;
+}
+.effect__false {
+  background: #ea4112;
 }
